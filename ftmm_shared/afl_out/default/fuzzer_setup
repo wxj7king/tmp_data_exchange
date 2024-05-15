@@ -1,0 +1,9 @@
+# environment variables:
+AFL_CUSTOM_MUTATOR_LIBRARY=/home/user/Fuzztrunction--/afl_custom_mutator/inject_ts.so
+AFL_CUSTOM_MUTATOR_ONLY=1
+AFL_CUSTOM_INFO_PROGRAM=/home/user/targets/openssl/afl/openssl/apps/openssl
+AFL_CUSTOM_INFO_PROGRAM_ARGV=rsa -check -in @@ -passin pass:xxxxx
+AFL_CUSTOM_INFO_OUT=/home/user/shared/afl_out/default
+AFL_SKIP_CPUFREQ=1
+# command line:
+'/home/user/Fuzztrunction--/AFLplusplus/afl-fuzz' '-i' '/home/user/targets/openssl/afl_in' '-o' '/home/user/shared/afl_out' '--' '/home/user/targets/openssl/afl/openssl/apps/openssl' 'rsa' '-check' '-in' '@@' '-passin' 'pass:xxxxx'
