@@ -1,0 +1,7 @@
+/home/user/targets/openssl/afl/openssl/apps/openssl
+rsa
+-check
+-in
+@@
+-passin
+pass:xxxxx
