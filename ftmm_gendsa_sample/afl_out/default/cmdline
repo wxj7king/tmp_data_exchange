@@ -1,0 +1,6 @@
+/home/user/fuzztruction/fuzztruction-experiments/comparison-with-state-of-the-art/binaries/openssl/afl/openssl/apps/openssl
+dsa
+-in
+@@
+-passin
+pass:xxxx
