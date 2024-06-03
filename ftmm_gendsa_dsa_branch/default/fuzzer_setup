@@ -1,0 +1,7 @@
+# environment variables:
+AFL_CUSTOM_MUTATOR_LIBRARY=/home/user/Fuzztrunction--/afl_custom_mutator/inject_ts.so
+AFL_CUSTOM_MUTATOR_ONLY=1
+AFL_KILL_SIGNAL=9
+AFL_SKIP_CPUFREQ=1
+# command line:
+'/home/user/Fuzztrunction--/AFLplusplus/afl-fuzz' '-i' '/home/user/ftmm_targets/gendsa_dsa/afl_in' '-o' '/home/user/ftmm_targets/gendsa_dsa/afl_out' '--' '/home/user/fuzztruction/fuzztruction-experiments/comparison-with-state-of-the-art/binaries/openssl/afl/openssl/apps/openssl' 'dsa' '-in' '@@' '-passin' 'pass:xxxx'
